@@ -3,7 +3,6 @@ package ejercicio3;
 public class Employees {
 	private String nombre;
 	private int años;
-	private int añosEmpresa;
 	
 	public Employees(String nombre, int an) {
 		this.setNombre(nombre);
@@ -24,13 +23,5 @@ public class Employees {
 
 	public void setAños(int años) {
 		this.años = años;
-	}
-
-	public int getAñosEmpresa() {
-		return añosEmpresa;
-	}
-
-	public void setAñosEmpresa(int añosEmpresa) {
-		this.añosEmpresa = añosEmpresa;
 	}
 }

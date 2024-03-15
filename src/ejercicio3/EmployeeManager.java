@@ -13,10 +13,10 @@ public class EmployeeManager {
 	} 
 	
 	public void printEmployees(){ 
-		System.out.println("Listofemployees:"); 
-		for(int i=0;i<numberOfEmployees;i++){ 
-			System.out.println(employeeNames[i]+",Yearsincompany:"+ employeeYears[i]);
-		} 
+		System.out.println("LISTA DE EMPLEADOS: ");
+		for (Employees e : empleados) {
+			System.out.println("Nombre: "+e.getNombre()+"   Años en la empresa: "+e.getAños());
+		}
 	} 
 	
 	public static void main(String[]args){ 
