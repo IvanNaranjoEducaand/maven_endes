@@ -18,6 +18,7 @@ public class EmployeeManager {
 	 */
 	public void addEmployee(String name,int years){ 
 			Employees emp1 = new Employees(name, years);
+			empleados.add(emp1);
 			System.out.println(name+" Added to the system."); 
 	} 
 	
