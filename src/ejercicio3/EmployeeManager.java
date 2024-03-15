@@ -3,8 +3,8 @@ package ejercicio3;
 import java.util.ArrayList;
 
 public class EmployeeManager {
-	ArrayList<Employees> empleados = new ArrayList<Employees>();
-	int numberOfEmployees=0; 
+	private ArrayList<Employees> empleados = new ArrayList<Employees>();
+	private int numberOfEmployees=0; 
 	
 	public void addEmployee(String name,int years){ 
 			Employees emp1 = new Employees(name, years);

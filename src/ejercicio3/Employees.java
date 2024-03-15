@@ -1,12 +1,36 @@
 package ejercicio3;
 
 public class Employees {
-	String nombre;
-	int años;
-	int añosEmpresa;
+	private String nombre;
+	private int años;
+	private int añosEmpresa;
 	
 	public Employees(String nombre, int an) {
+		this.setNombre(nombre);
+		this.setAños(an);
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
-		this.años = an;
+	}
+
+	public int getAños() {
+		return años;
+	}
+
+	public void setAños(int años) {
+		this.años = años;
+	}
+
+	public int getAñosEmpresa() {
+		return añosEmpresa;
+	}
+
+	public void setAñosEmpresa(int añosEmpresa) {
+		this.añosEmpresa = añosEmpresa;
 	}
 }
