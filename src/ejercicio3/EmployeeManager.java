@@ -1,19 +1,15 @@
 package ejercicio3;
 
+import java.util.ArrayList;
+
 public class EmployeeManager {
-	String[] employeeNames=new String[10]; 
-	int[] employeeYears=new int[10]; 
+	ArrayList<Employees> empleados = new ArrayList<Employees>();
 	int numberOfEmployees=0; 
 	
 	public void addEmployee(String name,int years){ 
-		if(numberOfEmployees<10){ 
-			employeeNames[numberOfEmployees]=name; 
-			employeeYears[numberOfEmployees]=years; 
+			Employees emp1 = new Employees(name, years);
 			numberOfEmployees++; 
-			System.out.println(name+"addedtothesystem."); 
-		}else{ 
-			System.out.println("Cannotaddmoreemployees,systemisfull."); 
-		} 
+			System.out.println(name+"added to the system."); 
 	} 
 	
 	public void printEmployees(){ 

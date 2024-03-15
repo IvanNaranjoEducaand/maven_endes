@@ -5,9 +5,8 @@ public class Employees {
 	int años;
 	int añosEmpresa;
 	
-	public Employees(String nombre, int an, int anEmp) {
+	public Employees(String nombre, int an) {
 		this.nombre = nombre;
 		this.años = an;
-		this.añosEmpresa = anEmp;
 	}
 }
